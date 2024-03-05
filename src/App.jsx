@@ -1,10 +1,16 @@
-import Player from './components/Player.jsx';
+import Player from "./components/Player.jsx";
+import TimerChallenge from "./components/TimerChallenge.jsx";
 
 function App() {
   return (
     <>
       <Player />
-      <div id="challenges"></div>
+      <div id="challenges">
+        <TimerChallenge title="Easy" targetTime="1" />
+        <TimerChallenge title="Not Easy" targetTime="5" />
+        <TimerChallenge title="Almost Tough" targetTime="10" />
+        <TimerChallenge title="Tough" targetTime="15" />
+      </div>
     </>
   );
 }
